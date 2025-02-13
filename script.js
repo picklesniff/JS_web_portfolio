@@ -5,8 +5,6 @@ function toggleMenu() {
   icon.classList.toggle("open");
 };
 
-
-
 function toggleTimeline() {
   const popup = document.getElementById("timeline-popup");
   const overlay = document.getElementById("popup-overlay");
@@ -23,7 +21,6 @@ function toggleTimeline() {
   }
 }
 
-// ✅ Close pop-up when clicking outside the box
 document.getElementById("popup-overlay").addEventListener("click", function (event) {
   if (event.target === this) {
     toggleTimeline();
